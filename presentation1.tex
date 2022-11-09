@@ -1,0 +1,192 @@
+% Valentino Vranic
+% Metody inzinierskej prace 2012/13
+
+\documentclass{beamer}
+
+%\usetheme{Warsaw}
+%\usetheme{Antibes}
+\usetheme{JuanLesPins}
+%\usetheme{Goettingen}
+
+\usecolortheme{seahorse}
+%\usecolortheme{dolphin}
+%\usecolortheme{rose}
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_color.html
+%\usecolortheme{beaver}
+
+%\useoutertheme[]{sidebar}
+
+\setbeamercovered{transparent}
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+
+\usepackage{listings}
+
+\lstset{language=C++,basicstyle=\fontsize{8}{9.6}\selectfont,showstringspaces=false,columns=fullflexible,identifierstyle=\ttfamily,keywordstyle=\bfseries,showstringspaces=false,columns=fullflexible}
+%\lstset{language=C,basicstyle=\fontsize{10.5}{12.6}\selectfont,identifierstyle=\ttfamily,keywordstyle=\bfseries,showstringspaces=false,columns=fixed}
+
+\def\BibTeX{\textsc{Bib}\kern-.08em\TeX} 
+
+\newcommand{\footcite}[1]{\footnote{\tiny #1}}
+\newcommand{\umlet}{.5}
+\newcommand{\emp}[1]{\textit{\alert{#1}}}
+\newcommand{\kw}[1]{\mbox{\textbf{#1}}}
+\newcommand{\id}[1]{\texttt{#1}}
+\newcommand{\stl}{\guillemotleft}
+\newcommand{\str}{\guillemotright}
+
+\newcommand{\lsti}{\lstinline[basicstyle=\fontsize{10.5}{12.1}\selectfont]}
+
+\newcommand{\ssection}[1]{
+	\section{#1}
+	\begin{frame}[fragile=singleslide]\frametitle{}
+	\Huge #1
+	\end{frame}
+}
+
+\newcommand{\ssectionn}[1]{
+	\section*{#1}
+	\begin{frame}[fragile=singleslide]\frametitle{}
+	\Huge #1
+	\end{frame}
+}
+
+\newenvironment{program}{\begin{beamercolorbox}[rounded=true,shadow=true]{block body}\vspace{-4mm}}{\vspace{-2mm}\end{beamercolorbox}}
+
+\setbeamercolor{fvystup}{fg=white,bg=black}
+\newenvironment{vystup}{\begin{beamercolorbox}[rounded=true,shadow=true]{fvystup}}{\end{beamercolorbox}}
+
+\newenvironment{poznamka}{\begin{beamercolorbox}[rounded=true,shadow=false]{block body}}{\end{beamercolorbox}}
+
+\setbeamertemplate{footline}[page number]
+{
+%\insertpagenumber
+%\begin{beamercolorbox}{section in head/foot}
+%\vskip2pt\insertnavigation{\paperwidth}\vskip2pt
+%\end{beamercolorbox}%
+}
+
+
+
+\author{Nematullah Hasani}
+%\url{www.fiit.stuba.sk/~vranic}, \url{vranic@fiit.stuba.sk}}
+%{\tiny \url{www.fiit.stuba.sk/~vranic}, \url{vranic@fiit.stuba.sk}}
+\institute{
+	Institute of Informatics, Information Systems and Software Engineering\\
+Faculty of Informatics and Information Technologies\\
+Slovak Technical University in Bratislava}
+
+\subtitle{\vspace{3mm} 	Method engineering  2022/2023}
+
+\title{Mobile games
+}
+
+\date{\footnotesize 9. november 2022}
+
+
+
+
+\begin{document}
+
+\begin{frame}[fragile=singleslide]
+\titlepage
+\end{frame}
+
+
+\begin{frame}[fragile=singleslide]\frametitle{outline}
+what is mobile games\\
+History of mobile games\\
+Types of mobile games\\
+Advantage of mobile games\\
+Disadvantage of mobile games\\
+
+\end{frame}
+
+
+\begin{frame}[fragile=singleslide]\frametitle{Mobile games}
+\begin{itemize}
+    \item Mobile phone has become a part of human life.
+    \item Mobile games are not a new phenomenon.
+    \item Mobile games are placed in mobile in two ways:
+    \begin{itemize}
+        \item pre-installed games
+        \item Games that are available in Play Store and Gamenet
+    \end{itemize}
+    \item Every year, many games in different styles are released in the market,
+\end{itemize}
+\end{frame}
+
+% príkaz \ssection by vytvoril zvláštný slajd s názvom časti - v krátkych prezentáciách to prekáža, lebo oberá o čas
+
+\begin{frame}[fragile=singleslide]\frametitle{اHistory of mobile games}
+\begin{itemize}
+    \item The history of mobile games does not begin with the introduction of the first electronic game in 1970.
+    \item The first mobile game was introduced in 1994 called Tetris
+    \item Three years later, Nokia introduced the snake game in 1997
+    \item In 2000, the first downloadable game was introduced.
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile=singleslide]\frametitle{Mobile games categories}
+\begin{itemize}
+\item 
+There are different types of mobile games which are categorized according to their main features or objectives. Not based on the type of gameplay they have.
+\end{itemize}
+\begin{table}[h]
+\textbf{Mobile games categories}\\ 
+\begin{tabular}{|c |c |}
+ \hline\hline
+  \textbf{Action games} & \textbf{Action-adventure games}\\ 
+  \hline
+  \textbf{Adventure games} & \textbf{Strategy games} \\
+  
+  \hline
+ \textbf{Role-playing games} & \textbf{Simulation games} \\
+ \hline
+ \textbf{Sports games} &\textbf{ Puzzle games}\\ 
+ \hline
+ \textbf{Idle games} & \\
+ \hline
+\end{tabular}
+\caption{It shows the categories of mobile games.}
+\label{table:1}
+\end{table}
+\end{frame}
+
+
+\begin{frame}[fragile=singleslide]\frametitle{Advantage of mobile games}
+%\includegraphics[scale=.35]{diagram.pdf}
+% pridajte vlastný obrázok a zrušte znák % pred príkazom \includegraphics vo formáte PDF prípadne PNG alebo JPG
+% scale určuje veľkosť obrázku
+\begin{itemize}
+    \item Strengthens problem solving skills
+    \item It allows for moments to recharge
+    \item It increases the efficiency of creativity
+    \item It improves morale and team building
+    \item t reduces stress
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile=singleslide]\frametitle{Disadvantage of mobile games}
+\begin{itemize}
+\item Weakness in vision
+\item Increasing the probability of disease
+\item Reduction of social relations
+\end{itemize}
+\end{frame}
+
+
+\end{document}
+
+
+
+
+Text \end{document} za príkazom \end{document} LaTeX ignoruje, takže tu môžete odkladať veci (aj celé slajdy), ktoré nechcete vymazať, lebo ich ešte možno budete potrebovať, avšak ich v danom momente nechcete mať v slajdoch.
+
